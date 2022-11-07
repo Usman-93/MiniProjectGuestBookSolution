@@ -10,6 +10,18 @@ namespace MiniProjectGuestBookProj
     {
         static void Main(string[] args)
         {
+
+
+            GuestLogic.WelcomeMessage();
+
+            var (partyGroupNames, totalGuests) = GuestLogic.GetAllGuests();
+
+            GuestLogic.PrintTotalGuestAndSize(partyGroupNames, totalGuests);
+
+            Console.ReadLine();
+
         }
+
+
     }
 }
